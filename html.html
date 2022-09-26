@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý nhân viên</title>
+    <script src="./libs/jquery.min.js"></script>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.min.css">
+    <link rel="stylesheet" href="./css/home.min.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- <div class="login">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Key kích hoạt</span>
+            </div>
+            <input type="key" id="key" class="form-control" required  placeholder="Key kích hoạt" aria-label="Key kích hoạt" aria-describedby="basic-addon1">
+            <div class="input-group">
+              <input style="margin-top: 20px;" class="btn success save" type="button" id="active" value="Kích hoạt">
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Phần thân chương trình -->
+        <div class="main_site">
+            <div class="title">
+                <h5 class="name">KHÁNG NHÓM VI PHẠM CHÍNH SÁCH</h5>
+                <H5> GẬY VÀNG - ĐỎ</H5>
+            </div>
+            <input type="text" hidden id="cookie">
+            <div class="content">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">ID NHÓM</span>
+                    </div>
+                    <input type="text" aria-required="true" id="uid" class="form-control" required placeholder="Uid Group" aria-label="Uid Group" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group">
+                    <input class="btn success save" type="button" id="save" value="BẮT ĐẦU KHÁNG">
+                </div>
+            </div>
+            <ul class="view" id="view">
+                <div>
+                    <ul class="flex">
+                        <li class="note-item">Loading</li>
+                        <li style="margin-left: auto;" class="note-item"><span id="load"></span>%</li>
+                    </ul>
+                </div>
+                <div class="w3-border">
+                    <div class="w3-grey" id="loadding" style="height:24px;width:0%"></div>
+                </div>
+                <br>
+                <div for="">
+                    <div id="thongtin">Sẵn sàng</div>
+                </div>
+                <div for="">
+                    <div id="notethongbao"></div>
+                </div>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
